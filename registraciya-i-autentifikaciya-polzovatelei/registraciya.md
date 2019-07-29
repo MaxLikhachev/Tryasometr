@@ -2,7 +2,7 @@
 description: Генерация JWT для нового пользователя
 ---
 
-# Регистрация
+# Регистрация пользователя
 
 {% api-method method="post" host="https://192.168.0.40:8080" path="/signup" %}
 {% api-method-summary %}
