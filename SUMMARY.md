@@ -1,4 +1,9 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Начало работы](README.md)
+
+## Регистрация и аутентификация пользователей
+
+* [Аутентификация](registraciya-i-autentifikaciya-polzovatelei/autentifikaciya.md)
+* [Регистрация](registraciya-i-autentifikaciya-polzovatelei/registraciya.md)
 
