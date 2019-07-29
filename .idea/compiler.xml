@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Tryasometr" />
+        <module name="tryasometr-new" />
         <module name="tryasometr" />
       </profile>
     </annotationProcessing>
@@ -15,6 +16,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Tryasometr" options="-parameters" />
       <module name="tryasometr" options="-parameters" />
+      <module name="tryasometr-new" options="-parameters" />
     </option>
   </component>
 </project>
