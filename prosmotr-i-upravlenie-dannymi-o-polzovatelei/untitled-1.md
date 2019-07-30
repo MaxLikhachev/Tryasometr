@@ -24,11 +24,11 @@ JWT
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="id" type="string" required=false %}
+{% api-method-parameter name="id" type="string" required=true %}
 ID модели
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="year" type="string" required=false %}
+{% api-method-parameter name="year" type="string" required=true %}
 Год выпуска
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
