@@ -63,7 +63,7 @@ ID модели
 
 {% api-method-response-example httpCode=400 %}
 {% api-method-response-example-description %}
-Отсутсвуют необходимые параметры
+Отсутствуют необходимые параметры
 {% endapi-method-response-example-description %}
 
 ```javascript
