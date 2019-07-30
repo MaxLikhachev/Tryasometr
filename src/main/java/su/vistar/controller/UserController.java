@@ -26,8 +26,6 @@ import java.util.List;
 @RequestMapping(path="/user")
 public class UserController {
 	@Autowired
-	private AuthenticationManager authenticationManager;
-	@Autowired
 	private JwtTokenUtil jwtTokenUtil;
 	@Autowired
 	private JwtUserDetailsService userDetailsService;
@@ -43,8 +41,7 @@ public class UserController {
 	private BrandModelService brandModelService;
 
 	@GetMapping("/info")
-	public @ResponseBody
-	UserDTO getData (HttpServletRequest request){
+	public @ResponseBody UserDTO getData (HttpServletRequest request){
 		UserDAO user = userDetailsService.findUserByUsername(jwtTokenUtil.getUsernameFromHeader(request));
 		UserDTO newUser = new UserDTO(user);
 
@@ -60,5 +57,12 @@ public class UserController {
 		newUser.setCars(newCars);
 
 		return newUser;
+	}
+
+	//TODO update user's data
+	@PutMapping()
+	public @ResponseBody UserDTO updateData (@RequestParam UserDTO userDTO, HttpServletRequest request){
+		UserDAO user = userDetailsService.findUserByUsername(jwtTokenUtil.getUsernameFromHeader(request));
+		return new UserDTO(userDetailsService.save(new UserDTO(user)));
 	}
 }

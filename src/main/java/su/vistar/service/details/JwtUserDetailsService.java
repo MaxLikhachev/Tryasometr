@@ -62,4 +62,6 @@ public class JwtUserDetailsService implements UserDetailsService {
 
 		return userRepository.save(newUser);
 	}
+
+	public UserDAO update(UserDTO user) {return userRepository.update(user.getUsername(), user.getPhone(),user.getEmail());}
 }

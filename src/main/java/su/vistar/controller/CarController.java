@@ -10,7 +10,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import su.vistar.service.details.JwtUserDetailsService;
 
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import static com.mysql.cj.conf.PropertyKey.logger;
 
 @Controller
 @RequestMapping(path="/cars")
@@ -30,26 +37,50 @@ public class CarController {
     @Autowired
     private BrandModelService brandModelService;
 
-    @PostMapping("/new")
-    public @ResponseBody CarDTO put (@RequestParam(name="id") long id, @RequestParam(name="year") int year, HttpServletRequest request){
-        String username = jwtTokenUtil.getUsernameFromHeader(request);
-        UserDAO user = userDetailsService.findUserByUsername(username);
-        ModelDAO model = modelService.getById(id);
+    @PostMapping()
+    public @ResponseBody CarDTO addNewCar (@RequestParam(name="id") long id, @RequestParam(name="year") int year, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+            String username = jwtTokenUtil.getUsernameFromHeader(request);
+            UserDAO user = userDetailsService.findUserByUsername(username);
 
-        CarDAO car = new CarDAO();
-        car.setModel(model);
-        car.setYear(year);
-        carService.add(car);
+                ModelDAO model = modelService.getById(id);
 
-        UserCarDAO userCar = new UserCarDAO();
-        userCar.setCarID(car.getID());
-        userCar.setUserID(user.getID());
-        userCarService.add(userCar);
+                if(model.getName() == null)
+                    response.sendError(HttpServletResponse.SC_NO_CONTENT);
 
-        BrandModelDAO brandModel = brandModelService.getByModelID(id);
-        BrandDAO brand = brandService.getById(brandModel.getMarkID());
+                CarDAO car = new CarDAO();
+                car.setModel(model);
+                car.setYear(year);
+                carService.add(car);
 
-        return new CarDTO(brand.getName(),model.getName(),year);
+//TODO Constructors for child-entities
+                UserCarDAO userCar = new UserCarDAO();
+                userCar.setCarID(car.getID());
+                userCar.setUserID(user.getID());
+                userCarService.add(userCar);
+
+                BrandModelDAO brandModel = brandModelService.getByModelID(id);
+                BrandDAO brand = brandService.getById(brandModel.getMarkID());
+
+                return new CarDTO(brand.getName(),model.getName(),year);
     }
 
+    @DeleteMapping(path = "/{id}")
+    public @ResponseBody void deleteCar (@PathVariable(name ="id") long id, HttpServletRequest request, HttpServletResponse response) throws IOException {
+        String username = jwtTokenUtil.getUsernameFromHeader(request);
+        UserDAO user = userDetailsService.findUserByUsername(username);
+
+        List<UserCarDAO> userCars = userCarService.getAllByID(user.getID());
+
+        if(userCars.size()==0)
+            response.sendError(HttpServletResponse.SC_NO_CONTENT);
+
+        for(UserCarDAO userCar : userCars)
+            if(userCar.getCarID() == id)
+                if(userCars.size()==1)
+                    response.sendError(HttpServletResponse.SC_NOT_MODIFIED,"This car couldn't be deleted. It is a single car for user "+username);
+                 else {
+                    carService.delete(carService.getById(userCar.getCarID()));
+                    userCarService.delete(userCar);
+                }
+    }
 }

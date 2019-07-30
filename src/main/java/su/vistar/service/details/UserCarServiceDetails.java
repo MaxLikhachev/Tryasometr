@@ -17,5 +17,7 @@ public class UserCarServiceDetails implements UserCarService {
     @Override
     public List<UserCarDAO> getAllByID(long user_id){ return userCarRepository.findAllById(user_id); }
     @Override
+    public void delete(UserCarDAO userCar){userCarRepository.delete(userCar);}
+    @Override
     public void remove(){userCarRepository.deleteAll();}
 }

@@ -12,7 +12,7 @@ public class BrandDAO {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JsonIgnore
     private long mark_id;
-    @NotBlank
+    @Column
     private String name;
 
     public long getID(){return this.mark_id;}

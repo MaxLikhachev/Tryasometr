@@ -42,6 +42,8 @@ public class CarServiceDetails implements CarService {
 
         return cars;
     }
+    @Override
+    public void delete(CarDAO car){carRepository.delete(car);}
 
     @Override
     public void remove() {

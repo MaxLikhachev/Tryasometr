@@ -14,5 +14,7 @@ public interface UserRepository extends JpaRepository<UserDAO, Integer> {
 
 	@Query(value = "select * from user where username=:username", nativeQuery = true)
 	UserDAO findByUsername(@Param("username") String username);
-	
+
+	@Query(value = "update user set phone=:phone, email=:email where username=:username", nativeQuery = true)
+	UserDAO update(@Param("username") String username, @Param("phone") String phone, @Param("email") String email);
 }

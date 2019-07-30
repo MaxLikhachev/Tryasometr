@@ -9,7 +9,7 @@ public class ModelDAO {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long model_id;
-    @NotBlank
+    @Column
     private String name;
 
     public long getID(){return this.model_id;}
