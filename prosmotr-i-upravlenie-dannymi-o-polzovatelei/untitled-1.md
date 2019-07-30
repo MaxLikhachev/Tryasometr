@@ -50,6 +50,28 @@ ID модели
 }
 ```
 {% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=204 %}
+{% api-method-response-example-description %}
+Выбранная модель автомобиля не найдена
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=400 %}
+{% api-method-response-example-description %}
+Отсутсвуют необходимые параметры
+{% endapi-method-response-example-description %}
+
+```javascript
+{
+    "message": "Required int parameter 'year' is not present",
+}
+```
+{% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
