@@ -15,7 +15,7 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import su.vistar.service.details.JwtUserDetailsService;
+import su.vistar.service.JwtUserDetailsService;
 
 import io.jsonwebtoken.ExpiredJwtException;
 

@@ -8,13 +8,13 @@ import org.springframework.stereotype.Repository;
 import su.vistar.model.dao.UserDAO;
 
 @Repository
-public interface UserRepository extends JpaRepository<UserDAO, Integer> {
+public interface UserRepository extends JpaRepository<UserDAO, Long> {
 	
 	//UserDAO findByUsername(String username);
 
-	@Query(value = "select * from user where username=:username", nativeQuery = true)
+	@Query(value = "select * from users where username=:username", nativeQuery = true)
 	UserDAO findByUsername(@Param("username") String username);
 
-	@Query(value = "update user set phone=:phone, email=:email where username=:username", nativeQuery = true)
+	@Query(value = "update users set phone=:phone, email=:email where username=:username", nativeQuery = true)
 	UserDAO update(@Param("username") String username, @Param("phone") String phone, @Param("email") String email);
 }

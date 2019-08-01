@@ -1,22 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3403883b-995a-4393-89be-698d83257e48" name="Default Changelist" comment="Test IntelliJ IDEA">
-      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/DI.java" afterDir="false" />
+    <list default="true" id="3403883b-995a-4393-89be-698d83257e48" name="Default Changelist" comment="Added response errors messages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/DI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/config/JwtRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/config/JwtRequestFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/controller/BrandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/controller/BrandController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/controller/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/controller/CarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/controller/JwtAuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/controller/JwtAuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/controller/ModelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/controller/ModelController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/model/dao/BrandDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/model/dao/BrandDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/model/dao/BrandModelDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/model/dao/CarDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/model/dao/CarDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/model/dao/ModelDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/model/dao/ModelDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/model/dao/UserCarDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/model/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/model/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/repository/BrandModelRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/repository/BrandRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/repository/BrandRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/repository/CarRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/repository/CarRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/repository/ModelRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/repository/ModelRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/repository/UserCarRepository.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/service/BrandModelService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/service/BrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/BrandService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/service/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/CarService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/service/UserCarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/UserCarService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/CarServiceDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/CarServiceDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/JwtUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/JwtUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/UserCarServiceDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/UserCarServiceDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/trysometr.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/controller/JwtAuthenticationAndUserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/trysometr.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/service/ModelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/ModelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/service/UserCarService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/BrandModelServiceDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/BrandServiceDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/CarServiceDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/JwtUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/JwtUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/ModelServiceDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/UserCarServiceDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/config/JwtRequestFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/config/JwtRequestFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/controller/BrandController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/controller/BrandController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/controller/CarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/controller/CarController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/controller/ModelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/controller/ModelController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/model/dao/BrandDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/model/dao/BrandDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/model/dao/BrandModelDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/model/dao/CarDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/model/dao/CarDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/model/dao/ModelDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/model/dao/ModelDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/model/dao/UserCarDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/model/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/model/dao/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/repository/BrandModelRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/repository/BrandRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/repository/BrandRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/repository/ModelRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/repository/ModelRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/repository/UserCarRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/service/BrandModelService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/service/BrandService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/service/BrandService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/service/CarService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/service/CarService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/service/ModelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/service/ModelService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/service/UserCarService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/service/details/BrandModelServiceDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/service/details/BrandServiceDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/service/details/CarServiceDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/service/details/JwtUserDetailsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/service/details/ModelServiceDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/service/details/UserCarServiceDetails.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,11 +88,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/config/WebSecurityConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="438">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/controller/BrandController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/controller/CarController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="79" column="74" selection-start-line="79" selection-start-column="74" selection-end-line="79" selection-end-column="74" />
+            <state relative-caret-position="360">
+              <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="25" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,10 +122,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/model/dao/CarDAO.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+            <state relative-caret-position="345">
+              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,11 +133,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/service/details/JwtUserDetailsService.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/controller/UserCarsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+            <state relative-caret-position="360">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,6 +150,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -95,11 +160,13 @@
       <find>dto</find>
       <find>CarDTO</find>
       <find>BrandDTO</find>
+      <find>brandRepository</find>
     </findStrings>
     <replaceStrings>
       <replace>dao</replace>
       <replace>CarDAO</replace>
       <replace>BrandDAO</replace>
+      <replace>userRepository</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -110,57 +177,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/model/UserInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/service/details/UserServiceDetails.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/repository/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/model/DAOUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/model/UserDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/service/details/UserDetailsService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/service/details/jwtUserDetailsService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/model/dao/UserCar.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/model/Car.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/model/dto/Car.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/model/dto/UserCarDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/model/JwtResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/model/dao/BrandModelDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/model/dao/UserCarDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/repository/UserCarRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/repository/CarRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/service/BrandService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/model/dto/BrandDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/model/dto/CarDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/service/BrandModelService.java" />
         <option value="$PROJECT_DIR$/src/main/java/su/vistar/service/details/BrandModelServiceDetails.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/service/details/BrandServiceDetails.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/repository/BrandModelRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/model/dto/ModelDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/config/JwtTokenUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/model/dto/UserDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/repository/BrandRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/controller/BrandController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/controller/ModelController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/config/WebSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/config/JwtRequestFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/service/ModelService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/service/details/ModelServiceDetails.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/repository/ModelRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/controller/JwtAuthenticationAndUserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/controller/JwtAuthenticationController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/DI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/service/UserCarService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/service/details/UserCarServiceDetails.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/model/dao/TestOne.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/repository/TestUserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/model/Car.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/repository/TestCarRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/model/Model.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/model/Brand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/controller/TestManyToOne.java" />
         <option value="$PROJECT_DIR$/src/main/java/su/vistar/service/details/CarServiceDetails.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/service/CarService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/repository/UserRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/service/details/JwtUserDetailsService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/model/dao/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/service/CarServiceDetails.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/service/ModelServiceDetails.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/DI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/model/dao/TestMany.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/controller/ModelController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/controller/CarController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/controller/API.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/model/dao/AbstractDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/model/dao/BrandDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/su/vistar/model/dao/CarDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/su/vistar/model/dao/ModelDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/model/dao/BrandDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/su/vistar/controller/CarController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/model/dao/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/controller/JwtAuthenticationController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/service/ServiceInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/service/ServiceAPI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/repository/AbstractRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/repository/BrandRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/repository/ModelRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/repository/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/service/JwtUserDetailsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/service/BrandService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/service/CarService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/repository/CarRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/controller/UserCarsControllers.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/controller/BrandController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/model/dao/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/repository/CommonRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/repository/UserRepositoryAbstract.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/service/UserAbstractService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/service/AbstractService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/service/CommonService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/controller/UserAbstractController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/model/dao/AbstractEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/controller/CommonController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/service/ModelService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/controller/AbstractController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/abstractWay/AbstractController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/su/vistar/controller/UserCarsController.java" />
       </list>
     </option>
   </component>
@@ -172,8 +239,19 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-boot-jwt" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="714" />
     <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -185,7 +263,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -263,6 +340,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="vistar" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Trysometr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tryasometr-new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vistar" type="462c0819:PsiDirectoryNode" />
               <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -274,21 +361,12 @@
               <item name="vistar" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Trysometr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tryasometr-new" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vistar" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="details" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -299,7 +377,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/su/vistar/model/dao" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/su/vistar/repository" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -312,6 +390,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -319,13 +398,16 @@
       <recent name="su.vistar.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/su/vistar/repository" />
       <recent name="$PROJECT_DIR$/src/main/java/su/vistar/model/dao" />
       <recent name="$PROJECT_DIR$/src/main/java/com/javainuse/controller" />
       <recent name="$PROJECT_DIR$/src/main/java/com/javainuse/model" />
       <recent name="$PROJECT_DIR$/src/main/java/com/javainuse/dao" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/javainuse/service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="su.vistar.repository" />
+      <recent name="su.vistar.model.dao" />
+      <recent name="su.vistar.service" />
       <recent name="su.vistar.controller" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -430,7 +512,8 @@
       <workItem from="1564307918957" duration="190000" />
       <workItem from="1564383577904" duration="5103000" />
       <workItem from="1564400885073" duration="1898000" />
-      <workItem from="1564469709644" duration="8934000" />
+      <workItem from="1564469709644" duration="17156000" />
+      <workItem from="1564557304879" duration="24482000" />
     </task>
     <task id="LOCAL-00001" summary="Test IntelliJ IDEA">
       <created>1564400927000</created>
@@ -439,11 +522,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564400927000</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added response errors messages">
+      <created>1564485302150</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1564485302150</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56267000" />
+    <option name="totallyTimeSpent" value="88971000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -455,10 +545,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21459228" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -484,16 +574,16 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24964234" />
-      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3297568" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.3297568" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21459228" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -503,7 +593,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.6325301" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.6325301" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -519,13 +609,13 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24964234" />
-      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3297568" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.3297568" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,183 +623,140 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test IntelliJ IDEA" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test IntelliJ IDEA" />
+    <MESSAGE value="Added response errors messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added response errors messages" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/fullDB (1).sql">
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/repository/TestUserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2690" />
+        <state relative-caret-position="75">
+          <caret line="8" column="62" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="62" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/model/dao/JwtRequest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/model/dao/JwtResponse.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/model/dto/BrandModelDTO.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/model/dto/UserCarDTO.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/service/UserService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/model/dto/BrandDTO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/repository/TestCarRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        <state relative-caret-position="120">
+          <caret line="14" column="93" selection-start-line="14" selection-start-column="93" selection-end-line="14" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/model/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="12" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/model/Brand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/model/dao/TestOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/repository/BrandModelRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/controller/TestManyToOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="34" column="52" selection-start-line="33" selection-start-column="8" selection-end-line="34" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/service/BrandModelService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/service/CarService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/service/details/BrandModelServiceDetails.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/model/Model.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="165">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="31" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/model/dto/ModelDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/service/BrandService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/service/details/BrandServiceDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="65" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.2.RELEASE/spring-security-core-5.1.2.RELEASE.jar!/org/springframework/security/core/userdetails/UsernameNotFoundException.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding>
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#377#378#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.2.RELEASE/spring-security-core-5.1.2.RELEASE-sources.jar!/org/springframework/security/core/AuthenticationException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="46" column="11" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
-          <folding>
-            <element signature="e#1468#1469#0" expanded="true" />
-            <element signature="e#1485#1486#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.2.RELEASE/spring-security-core-5.1.2.RELEASE-sources.jar!/org/springframework/security/core/userdetails/UsernameNotFoundException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="36" column="12" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.2.RELEASE/spring-security-core-5.1.2.RELEASE-sources.jar!/org/springframework/security/core/userdetails/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="83" column="11" selection-start-line="83" selection-start-column="11" selection-end-line="83" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.2.RELEASE/spring-security-core-5.1.2.RELEASE-sources.jar!/org/springframework/security/core/userdetails/UserDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/model/JwtResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/repository/CarRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/model/dao/TestMany.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <caret line="5" selection-start-line="5" selection-end-line="6" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/repository/BrandModelRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="45" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/model/JwtRequest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/controller/API.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/service/ModelService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/model/dao/ModelDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="35" />
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/model/dao/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/service/details/ModelServiceDetails.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/model/dao/AbstractDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#848#849#0" expanded="true" />
-            <element signature="e#902#903#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/model/dto/CarDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/model/dto/UserDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="75" column="2" selection-start-line="75" selection-start-column="2" selection-end-line="80" selection-end-column="5" />
+        <state relative-caret-position="105">
+          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="10" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -719,44 +766,65 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/DI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/repository/BrandRepository.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.1.3.RELEASE/spring-data-commons-2.1.3.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/service/ServiceAPI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="9" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/controller/BrandController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/repository/AbstractRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/repository/ModelRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/config/WebSecurityConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/abstractWay/UserCarsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="55" column="78" selection-start-line="55" selection-start-column="72" selection-end-line="55" selection-end-column="78" />
+        <state relative-caret-position="678">
+          <caret line="57" column="1" lean-forward="true" selection-start-line="17" selection-end-line="57" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/controller/JwtAuthenticationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-113">
-          <caret line="35" column="53" selection-start-line="30" selection-start-column="4" selection-end-line="35" selection-end-column="53" />
+        <state relative-caret-position="415">
+          <caret line="34" column="29" lean-forward="true" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -765,157 +833,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/controller/ModelController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="48" lean-forward="true" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/config/JwtTokenUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="162" selection-start-line="31" selection-start-column="162" selection-end-line="31" selection-end-column="162" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/config/JwtAuthenticationEntryPoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/service/UserCarService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/repository/UserCarRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/repository/ModelRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/service/details/UserCarServiceDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/service/details/CarServiceDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="45" column="11" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/service/CarService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/repository/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="18" column="113" lean-forward="true" selection-start-line="18" selection-start-column="113" selection-end-line="18" selection-end-column="113" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.13/mysql-connector-java-8.0.13.jar!/com/mysql/cj/conf/PropertyKey.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="105" column="25" lean-forward="true" selection-start-line="105" selection-start-column="11" selection-end-line="105" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/config/JwtRequestFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="31" column="92" selection-start-line="31" selection-start-column="64" selection-end-line="31" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/model/dao/ModelDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/model/dao/UserCarDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/model/dao/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-88">
-          <caret line="10" column="54" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/model/dao/BrandDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/model/dao/BrandModelDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -924,18 +843,214 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/model/dao/CarDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+        <state relative-caret-position="195">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/service/details/JwtUserDetailsService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/model/dto/BrandDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        <state relative-caret-position="165">
+          <caret line="13" column="55" lean-forward="true" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/model/dao/BrandDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/repository/BrandRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="54" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/service/JwtUserDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="52" column="39" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/repository/CarRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/service/CarService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="25" column="88" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/service/BrandService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="20" column="96" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/abstractWay/UserAbstractService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/service/ModelService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/abstractWay/CommonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/abstractWay/AbstractController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#257#258#0" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/abstractWay/UserAbstractController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/abstractWay/UserCarsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/abstractWay/AbstractEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/abstractWay/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/abstractWay/CommonRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/abstractWay/UserRepositoryAbstract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/abstractWay/AbstractService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/abstractWay/CommonService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/controller/BrandController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -944,8 +1059,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/controller/CarController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="79" column="74" selection-start-line="79" selection-start-column="74" selection-end-line="79" selection-end-column="74" />
+        <state relative-caret-position="360">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="25" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/su/vistar/controller/UserCarsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

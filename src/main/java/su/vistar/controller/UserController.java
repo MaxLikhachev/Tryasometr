@@ -2,67 +2,39 @@ package su.vistar.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.BadCredentialsException;
-import org.springframework.security.authentication.DisabledException;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import su.vistar.config.JwtTokenUtil;
-import su.vistar.model.JwtRequest;
-import su.vistar.model.JwtResponse;
 import su.vistar.model.dao.*;
-import su.vistar.model.dto.CarDTO;
 import su.vistar.model.dto.UserDTO;
-import su.vistar.service.*;
-import su.vistar.service.details.JwtUserDetailsService;
+import su.vistar.service.CarService;
+import su.vistar.service.JwtUserDetailsService;
+import su.vistar.service.ModelService;
 
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
-import java.util.ArrayList;
-import java.util.List;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 @Controller
 @RequestMapping(path="/user")
 public class UserController {
 	@Autowired
-	private JwtTokenUtil jwtTokenUtil;
+	protected JwtTokenUtil jwtTokenUtil;
 	@Autowired
-	private JwtUserDetailsService userDetailsService;
-	@Autowired
-	private BrandService brandService;
-	@Autowired
-	private CarService carService;
-	@Autowired
-	private ModelService modelService;
-	@Autowired
-	private UserCarService userCarService;
-	@Autowired
-	private BrandModelService brandModelService;
+	protected JwtUserDetailsService userService;
 
-	@GetMapping("/info")
-	public @ResponseBody UserDTO getData (HttpServletRequest request){
-		UserDAO user = userDetailsService.findUserByUsername(jwtTokenUtil.getUsernameFromHeader(request));
-		UserDTO newUser = new UserDTO(user);
-
-		List<CarDAO> cars = carService.getAllByUserID(user.getID());
-		List<CarDTO> newCars =  new ArrayList<>();
-
-		for(CarDAO car : cars) {
-			BrandModelDAO brandModel = brandModelService.getByModelID(car.getModel().getID());
-			BrandDAO brand = brandService.getById(brandModel.getMarkID());
-
-			newCars.add(new CarDTO(brand.getName(), car.getModel().getName(), car.getYear()));
-		}
-		newUser.setCars(newCars);
-
-		return newUser;
+	@GetMapping
+	public @ResponseBody
+	ResponseEntity<?> viewUser (HttpServletRequest request){
+		return ResponseEntity.ok(userService.findUserByUsername(jwtTokenUtil.getUsernameFromHeader(request)));
 	}
 
 	//TODO update user's data
-	@PutMapping()
-	public @ResponseBody UserDTO updateData (@RequestParam UserDTO userDTO, HttpServletRequest request){
-		UserDAO user = userDetailsService.findUserByUsername(jwtTokenUtil.getUsernameFromHeader(request));
-		return new UserDTO(userDetailsService.save(new UserDTO(user)));
+	@PutMapping
+	public @ResponseBody
+	ResponseEntity<?> editUser (@RequestParam UserDTO userDTO, HttpServletRequest request){
+		UserDAO user = userService.findUserByUsername(jwtTokenUtil.getUsernameFromHeader(request));
+		return ResponseEntity.ok(new UserDTO(userService.save(new UserDTO(user))));
 	}
 }

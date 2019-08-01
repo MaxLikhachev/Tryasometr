@@ -3,13 +3,15 @@ package su.vistar.model.dao;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
-@Table(name = "user")
+@Table(name = "users")
 public class UserDAO {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long user_id;
+	@JsonIgnore
+	protected long id;
 	@Column
 	private String username;
 	@Column
@@ -27,8 +29,11 @@ public class UserDAO {
 	@Column
 	private String phone;
 
+	@OneToMany
+	public List<CarDAO> cars;
+
 	public long getID() {
-		return this.user_id;
+		return this.id;
 	}
 
 	public String getUsername() {
@@ -68,10 +73,10 @@ public class UserDAO {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getPhone() {
-		return this.phone;
-	}
-	public void setPhone(String pnone) {
-		this.phone = phone;
-	}
+
+	public String getPhone() { return this.phone; }
+	public void setPhone(String pnone) { this.phone = phone; }
+
+	public List<CarDAO> getCars() { return this.cars; }
+	public void setCars(List<CarDAO> cars) { this.cars = cars; }
 }

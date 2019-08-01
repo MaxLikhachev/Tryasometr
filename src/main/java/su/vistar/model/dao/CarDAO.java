@@ -1,14 +1,17 @@
 package su.vistar.model.dao;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 
 @Entity
-@Table(name="car")
+@Table(name="cars")
 public class CarDAO {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long car_id;
+    @JsonIgnore
+    protected long id;
     @Column
     private float min;
     @Column
@@ -16,11 +19,11 @@ public class CarDAO {
     @Column
     private int year;
 
-    @ManyToOne(cascade=CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name="model_id")
     ModelDAO model;
 
-    public long getID(){return this.car_id;}
+    public long getID(){return this.id;}
 
     public float getMin(){return this.min;}
     public void setMin(float min){this.min = min;}
