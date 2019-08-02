@@ -2,18 +2,18 @@
 
 * [Начало работы](README.md)
 
-## Регистрация и аутентификация пользователей
+## Регистрация и аутентификация пользователей <a id="register-and-sign-up"></a>
 
-* [Аутентификация пользователя](registraciya-i-autentifikaciya-polzovatelei/autentifikaciya.md)
-* [Регистрация пользователя](registraciya-i-autentifikaciya-polzovatelei/registraciya.md)
+* [Аутентификация пользователя](register-and-sign-up/autentification.md)
+* [Регистрация пользователя](register-and-sign-up/sign-up.md)
 
-## Просмотр и управление данными о пользователей
+## Просмотр и управление данными о пользователей <a id="user-data-control"></a>
 
-* [Просмотр данных пользователя](prosmotr-i-upravlenie-dannymi-o-polzovatelei/prosmotr-dannykh.md)
-* [Добавление нового автомобиля](prosmotr-i-upravlenie-dannymi-o-polzovatelei/untitled-1.md)
+* [Просмотр данных пользователя](user-data-control/view-user-data.md)
+* [Добавление нового автомобиля](user-data-control/add-new-user-car.md)
 
-## Просмотр данных о производителях и моделях автомобилях
+## Просмотр данных о производителях и моделях автомобилях <a id="cars-brands-and-models-data"></a>
 
-* [Просмотр данных о производителях](prosmotr-dannykh-o-proizvoditelyakh-i-modelyakh-avtomobilyakh/prosmotr-dannykh-o-proizvoditelyakh.md)
-* [Просмотр моделей выбранного производителя](prosmotr-dannykh-o-proizvoditelyakh-i-modelyakh-avtomobilyakh/prosmotr-modelei-vybrannogo-proizvoditelya.md)
+* [Просмотр данных о производителях](cars-brands-and-models-data/view-cars-brands.md)
+* [Просмотр моделей выбранного производителя](cars-brands-and-models-data/view-cars-models.md)
 
