@@ -1,7 +1,7 @@
 package su.vistar.service;
 
+import su.vistar.entity.Model;
 import su.vistar.repository.ModelRepository;
-import su.vistar.model.dao.ModelDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,21 +14,21 @@ public class ModelService {
     @Autowired
     private ModelRepository modelRepository;
     //@Override
-    public ModelDAO add(ModelDAO model){return modelRepository.save(model);}
+    public Model add(Model model){return modelRepository.save(model);}
     //@Override
-    public ModelDAO getById(long id){
-        Optional<ModelDAO> optionalCarModel = modelRepository.findById(id);
-        ModelDAO model;
+    public Model getById(long id){
+        Optional<Model> optionalCarModel = modelRepository.findById(id);
+        Model model;
         if (optionalCarModel.isPresent()) model = optionalCarModel.get();
-        else model = new ModelDAO();
+        else model = new Model();
         return model;
     }
     //@Override
-    //public ModelDAO getByName(String name){
+    //public Model getByName(String name){
     //    return modelRepository.getByName(name);
     //}
     //@Override
-    public List<ModelDAO> getAll(){return modelRepository.findAll();}
+    public List<Model> getAll(){return modelRepository.findAll();}
    // @Override
     public void remove() {modelRepository.deleteAll();}
 }

@@ -1,7 +1,7 @@
 package su.vistar.service;
 
+import su.vistar.entity.Car;
 import su.vistar.repository.CarRepository;
-import su.vistar.model.dao.CarDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,23 +16,23 @@ public class CarService {
     private CarRepository carRepository;
 
     //@Override
-    public CarDAO add(CarDAO car) {
+    public Car add(Car car) {
         return carRepository.save(car);
     }
 
     //@Override
-    public CarDAO getById(long id) {
-        Optional<CarDAO> optionalCarMark = carRepository.findById(id);
-        CarDAO car = optionalCarMark.isPresent() ? optionalCarMark.get() : new CarDAO();
+    public Car getById(long id) {
+        Optional<Car> optionalCarMark = carRepository.findById(id);
+        Car car = optionalCarMark.isPresent() ? optionalCarMark.get() : new Car();
         return car;
     }
     //@Override
-    public List<CarDAO> getAll(){return carRepository.findAll();}
+    public List<Car> getAll(){return carRepository.findAll();}
     //@Override
-    public CarDAO edit(CarDAO car){return carRepository.saveAndFlush(car);}
+    public Car edit(Car car){return carRepository.saveAndFlush(car);}
 
     //@Override
-    public void delete(CarDAO car){carRepository.delete(car);}
+    public void delete(Car car){carRepository.delete(car);}
 
     //@Override
     public void remove() {

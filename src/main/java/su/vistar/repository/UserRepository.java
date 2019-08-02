@@ -5,16 +5,16 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import su.vistar.model.dao.UserDAO;
+import su.vistar.entity.UserData;
 
 @Repository
-public interface UserRepository extends JpaRepository<UserDAO, Long> {
+public interface UserRepository extends JpaRepository<UserData, Long> {
 	
-	//UserDAO findByUsername(String username);
+	//UserData findByUsername(String username);
 
 	@Query(value = "select * from users where username=:username", nativeQuery = true)
-	UserDAO findByUsername(@Param("username") String username);
+    UserData findByUsername(@Param("username") String username);
 
 	@Query(value = "update users set phone=:phone, email=:email where username=:username", nativeQuery = true)
-	UserDAO update(@Param("username") String username, @Param("phone") String phone, @Param("email") String email);
+    UserData update(@Param("username") String username, @Param("phone") String phone, @Param("email") String email);
 }

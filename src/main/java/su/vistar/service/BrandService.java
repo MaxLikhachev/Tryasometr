@@ -1,7 +1,7 @@
 package su.vistar.service;
 
+import su.vistar.entity.Brand;
 import su.vistar.repository.BrandRepository;
-import su.vistar.model.dao.BrandDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,19 +14,19 @@ public class BrandService{
     @Autowired
     private BrandRepository brandRepository;
     //@Override
-    public BrandDAO add(BrandDAO brand){return brandRepository.save(brand);}
+    public Brand add(Brand brand){return brandRepository.save(brand);}
     //@Override
-    public BrandDAO getById(long id){
-        Optional<BrandDAO> optionalCarBrand = brandRepository.findById(id);
-        BrandDAO brand = optionalCarBrand.isPresent() ? optionalCarBrand.get() : new BrandDAO();
+    public Brand getById(long id){
+        Optional<Brand> optionalCarBrand = brandRepository.findById(id);
+        Brand brand = optionalCarBrand.isPresent() ? optionalCarBrand.get() : new Brand();
         return brand;
     }
     //@Override
-    public List<BrandDAO> getAll(){return brandRepository.findAll();}
+    public List<Brand> getAll(){return brandRepository.findAll();}
     //@Override
-    public BrandDAO edit(BrandDAO brand){return brandRepository.saveAndFlush(brand);}
+    public Brand edit(Brand brand){return brandRepository.saveAndFlush(brand);}
     //@Override
-    public void delete(BrandDAO brand) {brandRepository.delete(brand);}
+    public void delete(Brand brand) {brandRepository.delete(brand);}
     //@Override
-    //public BrandDAO getByName(String name){return brandRepository.getByName(name);}
+    //public Brand getByName(String name){return brandRepository.getByName(name);}
 }

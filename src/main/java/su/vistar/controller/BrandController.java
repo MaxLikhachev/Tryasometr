@@ -2,9 +2,7 @@ package su.vistar.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
-import su.vistar.model.dao.BrandDAO;
-import su.vistar.model.dao.ModelDAO;
-import su.vistar.model.dto.BrandDTO;
+import su.vistar.entity.Model;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,7 +12,6 @@ import su.vistar.service.BrandService;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -24,18 +21,18 @@ public class BrandController {
 
     @GetMapping()
     public @ResponseBody
-    ResponseEntity<?> getAllBrands(){
-        List<BrandDAO> brands = brandService.getAll();
-        List<BrandDTO> newBrands = new ArrayList<>();
-        for(BrandDAO brand: brands) newBrands.add(new BrandDTO(brand));
-        return ResponseEntity.ok(newBrands);
+    ResponseEntity<?> getAll(){
+        return ResponseEntity.ok(brandService.getAll());
     }
 
     @GetMapping(path="/{brand_id}/models")
-    public @ResponseBody ResponseEntity<?> getAllModelsByBrandName(@PathVariable(name ="brand_id") long brandID, HttpServletResponse response) throws IOException {
-        List<ModelDAO> models = brandService.getById(brandID).getModels();
-        if (models.size() == 0)
+    public @ResponseBody ResponseEntity<?> getAllModels(@PathVariable(name ="brand_id") long brandID, HttpServletResponse response) throws IOException {
+        List<Model> models = brandService.getById(brandID).getModels();
+        if (models == null) {
+            //
             response.sendError(HttpServletResponse.SC_NO_CONTENT);
+            //ResponseEntity.status(HttpStatus.NO_CONTENT);
+        }
         return ResponseEntity.ok(models);
     }
 }
