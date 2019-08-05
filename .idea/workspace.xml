@@ -2,105 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3403883b-995a-4393-89be-698d83257e48" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/tryasometr-new.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/component/ScheduledVibrationAnalyzer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/config/SchedulerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/controller/HoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/controller/SectionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/controller/UserCarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/controller/VibrationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/entity/Hole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/entity/Section.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/entity/Vibration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/repository/HoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/repository/SectionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/repository/VibrationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/HoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/SectionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/VibrationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/config/JwtAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/component/JwtAuthenticationEntryPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/config/JwtRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/component/JwtRequestFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/config/JwtTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/component/JwtTokenUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/controller/BrandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/controller/BrandController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/controller/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/controller/CarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/controller/JwtAuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/controller/JwtAuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/controller/ModelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/controller/ModelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/model/JwtRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/entity/JwtRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/model/JwtResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/entity/JwtResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/model/dao/BrandDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/entity/Brand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/model/dao/CarDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/entity/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/model/dao/ModelDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/entity/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/model/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/entity/UserData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/model/dto/BrandDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/model/dto/CarDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/model/dto/ModelDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/model/dto/UserDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/repository/BrandRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/repository/BrandRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/repository/CarRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/repository/CarRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/repository/ModelRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/repository/ModelRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/service/BrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/BrandService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/service/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/CarService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/service/JwtUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/JwtUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/service/ModelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/ModelService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fullDB (1).sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/fullDB (1).sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/fullDB.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/tryasometr_brand.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/tryasometr_brand.sql.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/tryasometr_brand_model.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/tryasometr_car.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/tryasometr_hibernate_sequence.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/tryasometr_holes.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/tryasometr_model.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/tryasometr_sections.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/tryasometr_user.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/tryasometr_user_car.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fullDB (1).sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sql/fullDB (1).sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sql/fullDB.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sql/tryasometr_brand.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sql/tryasometr_brand.sql.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sql/tryasometr_brand_model.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sql/tryasometr_car.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sql/tryasometr_hibernate_sequence.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sql/tryasometr_holes.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sql/tryasometr_model.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sql/tryasometr_sections.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sql/tryasometr_user.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sql/tryasometr_user_car.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/config/JwtAuthenticationEntryPoint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/config/JwtRequestFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/config/JwtTokenUtil.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/controller/BrandController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/controller/BrandController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/controller/CarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/controller/CarController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/controller/ModelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/controller/ModelController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/model/JwtRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/model/JwtResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/model/dao/BrandDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/model/dao/CarDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/model/dao/ModelDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/model/dao/UserDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/model/dto/BrandDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/model/dto/CarDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/model/dto/ModelDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/model/dto/UserDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/repository/BrandRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/repository/BrandRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/repository/CarRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/repository/CarRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/repository/ModelRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/repository/ModelRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/service/BrandService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/service/BrandService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/service/CarService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/service/CarService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/service/ModelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/service/ModelService.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -387,7 +294,7 @@
       </method>
     </configuration>
     <configuration name="TryasometrApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="tryasometr-new" />
+      <module name="tryasometr-new-update" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.javainuse.*" />
@@ -439,6 +346,8 @@
       <workItem from="1564722082334" duration="35000" />
       <workItem from="1564722149872" duration="77000" />
       <workItem from="1564722273353" duration="11436000" />
+      <workItem from="1564991259561" duration="214000" />
+      <workItem from="1564991574543" duration="3613000" />
     </task>
     <task id="LOCAL-00001" summary="Test IntelliJ IDEA">
       <created>1564400927000</created>
@@ -491,7 +400,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
