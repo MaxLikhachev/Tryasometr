@@ -17,3 +17,7 @@
 * [Просмотр данных о производителях](cars-brands-and-models-data/view-cars-brands.md)
 * [Просмотр моделей выбранного производителя](cars-brands-and-models-data/view-cars-models.md)
 
+## Данные о ямах
+
+* [Добавление подозреваемой ямы](dannye-o-yamakh/dobavlenie-podozrevaemoi-yamy.md)
+
