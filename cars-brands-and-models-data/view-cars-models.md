@@ -4,7 +4,7 @@ description: Просмотр списка моделей выбранного �
 
 # Просмотр моделей выбранного производителя
 
-{% api-method method="get" host="https://192.168.0.40:8080" path="/brands/:brand\_name/models" %}
+{% api-method method="get" host="https://192.168.0.40:8080" path="/brands/:brand\_id/models" %}
 {% api-method-summary %}
 Get All Models By BrandName
 {% endapi-method-summary %}
@@ -16,8 +16,8 @@ Get All Models By BrandName
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="brand\_name" type="string" required=false %}
-Название производителя \("Audi","BMW" и т.п.\)
+{% api-method-parameter name="brand\_id" type="integer" required=true %}
+ID производителя 
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
