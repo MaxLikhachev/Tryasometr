@@ -1,17 +1,18 @@
 package su.vistar.service.details;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import su.vistar.entity.Hole;
+import su.vistar.model.entity.Hole;
 import su.vistar.repository.HoleRepository;
 import su.vistar.service.HoleService;
 
 import java.util.List;
-import java.util.Optional;
 @Service
 public class HoleServiceDetails implements HoleService {
-    @Autowired
-    private HoleRepository holeRepository;
+    private final HoleRepository holeRepository;
+
+    public HoleServiceDetails(HoleRepository holeRepository) {
+        this.holeRepository = holeRepository;
+    }
 
     //@Override
     public Hole add(Hole hole) {
@@ -20,9 +21,7 @@ public class HoleServiceDetails implements HoleService {
 
     //@Override
     public Hole getById(long id) {
-        Optional<Hole> optionalCarHole = holeRepository.findById(id);
-        Hole hole = optionalCarHole.isPresent() ? optionalCarHole.get() : new Hole();
-        return hole;
+        return holeRepository.findById(id).orElseGet(Hole::new);
     }
 
     //@Override

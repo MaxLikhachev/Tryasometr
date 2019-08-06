@@ -2,7 +2,7 @@ package su.vistar.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import su.vistar.entity.Vibration;
+import su.vistar.model.entity.Vibration;
 
 @Repository
 public interface VibrationRepository extends JpaRepository<Vibration, Long> {

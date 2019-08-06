@@ -1,39 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3403883b-995a-4393-89be-698d83257e48" name="Default Changelist" comment="Update architecture">
-      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/BrandServiceDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/CarServiceDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/HoleServiceDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/ModelServiceDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/SectionServiceDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/VibrationServiceDetails.java" afterDir="false" />
+    <list default="true" id="3403883b-995a-4393-89be-698d83257e48" name="Default Changelist" comment="Merge remote-tracking branch 'origin/master'">
+      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/model/entity/Model.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/model/request/BrandRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/model/request/CarRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/model/request/HoleRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/model/request/ModelRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/model/request/SectionRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/model/request/UserDataRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/model/request/VibrationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/model/response/BrandResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/model/response/CarResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/model/response/HoleResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/model/response/ModelResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/model/response/SectionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/model/response/UserDataResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/model/response/VibrationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/UserDataService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/UserDataServiceDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/TryasometrApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/TryasometrApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/component/JwtAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/component/JwtAuthenticationEntryPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/component/JwtRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/component/JwtRequestFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/component/JwtTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/component/JwtTokenUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/component/ScheduledVibrationAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/component/ScheduledVibrationAnalyzer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/config/SwaggerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/config/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/controller/BrandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/controller/BrandController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/controller/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/controller/CarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/controller/HoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/controller/HoleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/controller/JwtAuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/controller/JwtAuthenticationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/controller/SectionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/controller/SectionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/controller/UserCarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/controller/UserCarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/controller/UserDataController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/controller/VibrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/controller/VibrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/entity/Brand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/entity/Brand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/entity/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/entity/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/entity/Hole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/entity/Hole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/entity/JwtRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/entity/JwtRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/entity/JwtResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/entity/JwtResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/entity/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/entity/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/entity/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/entity/Section.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/entity/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/entity/UserData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/entity/Vibration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/entity/Vibration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/entity/Brand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/model/entity/Brand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/entity/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/model/entity/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/entity/Hole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/model/entity/Hole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/entity/JwtRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/model/request/JwtRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/entity/JwtResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/model/response/JwtResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/entity/Model.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/entity/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/model/entity/Section.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/entity/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/model/entity/UserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/entity/Vibration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/model/entity/Vibration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/repository/BrandRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/repository/BrandRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/repository/CarRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/repository/CarRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/repository/HoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/repository/HoleRepository.java" afterDir="false" />
@@ -48,11 +54,20 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/service/ModelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/ModelService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/service/SectionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/SectionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/service/VibrationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/VibrationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/BrandServiceDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/BrandServiceDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/CarServiceDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/CarServiceDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/HoleServiceDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/HoleServiceDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/ModelServiceDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/ModelServiceDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/SectionServiceDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/SectionServiceDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/VibrationServiceDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/service/details/VibrationServiceDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/config/WebSecurityConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/controller/BrandController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/controller/BrandController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/controller/CarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/controller/CarController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/repository/BrandRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/repository/BrandRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/repository/CarRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/repository/CarRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/repository/ModelRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/repository/ModelRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/repository/UserRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/service/BrandService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/service/BrandService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/service/CarService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/service/CarService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/service/ModelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/service/ModelService.class" afterDir="false" />
@@ -80,6 +95,9 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Trysometr" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -89,9 +107,14 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Max Likhachev &lt;max142343245@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="PUSH_AUTO_UPDATE" value="true" />
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -123,7 +146,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/su/vistar/service/details" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/su/vistar/model/request" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -144,11 +167,11 @@
       <recent name="su.vistar.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/su/vistar/model/request" />
+      <recent name="$PROJECT_DIR$/src/main/java/su/vistar/model" />
       <recent name="$PROJECT_DIR$/src/main/java/su/vistar/service/details" />
       <recent name="$PROJECT_DIR$/src/main/java/su/vistar/repository" />
       <recent name="$PROJECT_DIR$/src/main/java/su/vistar/model/dao" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/javainuse/controller" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/javainuse/model" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="su.vistar.controller" />
@@ -396,7 +419,9 @@
       <workItem from="1564722273353" duration="11436000" />
       <workItem from="1564991259561" duration="214000" />
       <workItem from="1564991574543" duration="5153000" />
-      <workItem from="1565076583826" duration="3613000" />
+      <workItem from="1565076583826" duration="19848000" />
+      <workItem from="1565160786232" duration="13265000" />
+      <workItem from="1565247338530" duration="5348000" />
     </task>
     <task id="LOCAL-00001" summary="Test IntelliJ IDEA">
       <created>1564400927000</created>
@@ -426,20 +451,21 @@
       <option name="project" value="LOCAL" />
       <updated>1564996206700</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Update architecture">
+      <created>1565081603874</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1565081603874</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -465,11 +491,16 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Test IntelliJ IDEA" />
     <MESSAGE value="Added response errors messages" />
     <MESSAGE value="Added automatic API creating" />
     <MESSAGE value="Update architecture" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update architecture" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="masterDetails">
     <states>

@@ -1,18 +1,20 @@
 package su.vistar.service.details;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import su.vistar.entity.Car;
+import su.vistar.model.entity.Car;
 import su.vistar.repository.CarRepository;
 import su.vistar.service.CarService;
 
 import java.util.List;
-import java.util.Optional;
+
+
 @Service
 public class CarServiceDetails implements CarService {
+    private final CarRepository carRepository;
 
-    @Autowired
-    private CarRepository carRepository;
+    public CarServiceDetails(CarRepository carRepository) {
+        this.carRepository = carRepository;
+    }
 
     @Override
     public Car add(Car car) {
@@ -21,9 +23,7 @@ public class CarServiceDetails implements CarService {
 
     @Override
     public Car getById(long id) {
-        Optional<Car> optionalCarMark = carRepository.findById(id);
-        Car car = optionalCarMark.isPresent() ? optionalCarMark.get() : new Car();
-        return car;
+        return carRepository.findById(id).orElseGet(Car::new);
     }
 
     @Override
@@ -45,6 +45,4 @@ public class CarServiceDetails implements CarService {
     public void remove() {
         carRepository.deleteAll();
     }
-
-
 }

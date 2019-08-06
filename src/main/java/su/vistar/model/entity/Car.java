@@ -1,4 +1,4 @@
-package su.vistar.entity;
+package su.vistar.model.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -19,7 +19,7 @@ public class Car implements Serializable {
     @Column
     private int year;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "model_id")
     private Model model;
 

@@ -1,7 +1,7 @@
 package su.vistar.service;
 
 import org.springframework.stereotype.Service;
-import su.vistar.entity.Hole;
+import su.vistar.model.entity.Hole;
 
 import java.util.List;
 

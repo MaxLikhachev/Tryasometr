@@ -1,7 +1,7 @@
 package su.vistar.service;
 
 import org.springframework.stereotype.Service;
-import su.vistar.entity.Brand;
+import su.vistar.model.entity.Brand;
 
 import java.util.List;
 
@@ -17,4 +17,6 @@ public interface BrandService {
     Brand edit(Brand brand);
 
     void delete(Brand brand);
+
+    Brand getByModelId(long modelID);
 }

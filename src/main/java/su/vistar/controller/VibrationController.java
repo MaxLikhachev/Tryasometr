@@ -1,21 +1,26 @@
 package su.vistar.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-import su.vistar.entity.Section;
-import su.vistar.entity.Vibration;
+import su.vistar.model.entity.Section;
+import su.vistar.model.entity.Vibration;
 import su.vistar.service.SectionService;
 import su.vistar.service.VibrationService;
 
 @Controller
 @RequestMapping(path = "/vibration")
 public class VibrationController {
-    @Autowired
-    private VibrationService vibrationService;
-    @Autowired
-    private SectionService sectionService;
+    protected final Log logger = LogFactory.getLog(this.getClass());
+    private final VibrationService vibrationService;
+    private final SectionService sectionService;
+
+    public VibrationController(VibrationService vibrationService, SectionService sectionService) {
+        this.vibrationService = vibrationService;
+        this.sectionService = sectionService;
+    }
 
     @GetMapping()
     public @ResponseBody

@@ -1,25 +1,13 @@
-package su.vistar.entity;
+package su.vistar.model.response;
 
-import javax.persistence.*;
 import java.io.Serializable;
 
-@Entity
-@Table(name = "holes")
-public class Hole implements Serializable {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    //@JsonIgnore
-    private long id;
-    @Column
+public class HoleResponse implements Serializable {
     private float factor;
-    @Column
-    private float latitude;
-    @Column
-    private float longitude;
 
-    public long getID() {
-        return this.id;
-    }
+    private float latitude;
+
+    private float longitude;
 
     public float getFactor() {
         return this.factor;

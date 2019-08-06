@@ -1,17 +1,18 @@
 package su.vistar.service.details;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import su.vistar.entity.Brand;
+import su.vistar.model.entity.Brand;
 import su.vistar.repository.BrandRepository;
 import su.vistar.service.BrandService;
 
 import java.util.List;
-import java.util.Optional;
 @Service
 public class BrandServiceDetails implements BrandService {
-    @Autowired
-    private BrandRepository brandRepository;
+    private final BrandRepository brandRepository;
+
+    public BrandServiceDetails(BrandRepository brandRepository) {
+        this.brandRepository = brandRepository;
+    }
 
     @Override
     public Brand add(Brand brand) {
@@ -20,9 +21,7 @@ public class BrandServiceDetails implements BrandService {
 
     @Override
     public Brand getById(long id) {
-        Optional<Brand> optionalCarBrand = brandRepository.findById(id);
-        Brand brand = optionalCarBrand.isPresent() ? optionalCarBrand.get() : new Brand();
-        return brand;
+        return brandRepository.findById(id).orElseGet(Brand::new);
     }
 
     @Override
@@ -38,5 +37,10 @@ public class BrandServiceDetails implements BrandService {
     @Override
     public void delete(Brand brand) {
         brandRepository.delete(brand);
+    }
+
+    @Override
+    public Brand getByModelId(long modelID) {
+        return brandRepository.getByModelId(modelID);
     }
 }

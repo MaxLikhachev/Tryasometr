@@ -1,25 +1,13 @@
-package su.vistar.entity;
+package su.vistar.model.request;
 
-import javax.persistence.*;
+public class VibrationRequest {
+    private SectionRequest section;
 
-@Entity
-@Table(name = "vibration")
-public class Vibration {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
-    @ManyToOne
-    private Section section;
-    @Column
     private float factor;
-    @Column
-    private float latitude;
-    @Column
-    private float longitude;
 
-    public long getID() {
-        return this.id;
-    }
+    private float latitude;
+
+    private float longitude;
 
     public float getFactor() {
         return this.factor;
@@ -45,11 +33,11 @@ public class Vibration {
         this.longitude = longitude;
     }
 
-    public Section getSection() {
+    public SectionRequest getSection() {
         return this.section;
     }
 
-    public void setSection(Section section) {
+    public void setSection(SectionRequest section) {
         this.section = section;
     }
 }

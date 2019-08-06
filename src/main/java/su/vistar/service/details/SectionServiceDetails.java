@@ -1,17 +1,18 @@
 package su.vistar.service.details;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import su.vistar.entity.Section;
+import su.vistar.model.entity.Section;
 import su.vistar.repository.SectionRepository;
 import su.vistar.service.SectionService;
 
 import java.util.List;
-import java.util.Optional;
 @Service
 public class SectionServiceDetails implements SectionService {
-    @Autowired
-    private SectionRepository sectionRepository;
+    private final SectionRepository sectionRepository;
+
+    public SectionServiceDetails(SectionRepository sectionRepository) {
+        this.sectionRepository = sectionRepository;
+    }
 
     @Override
     public Section add(Section section) {
@@ -20,9 +21,7 @@ public class SectionServiceDetails implements SectionService {
 
     @Override
     public Section getById(long id) {
-        Optional<Section> optionalCarSection = sectionRepository.findById(id);
-        Section section = optionalCarSection.isPresent() ? optionalCarSection.get() : new Section();
-        return section;
+        return sectionRepository.findById(id).orElseGet(Section::new);
     }
 
     @Override

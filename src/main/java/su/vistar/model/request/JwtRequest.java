@@ -1,4 +1,4 @@
-package su.vistar.entity;
+package su.vistar.model.request;
 
 import java.io.Serializable;
 

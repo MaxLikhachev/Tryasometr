@@ -1,4 +1,4 @@
-package su.vistar.entity;
+package su.vistar.model.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -14,7 +14,7 @@ public class Section implements Serializable {
     protected long id;
     @Column
     private float factor;
-    @OneToMany
+    @OneToMany(fetch = FetchType.EAGER)
     private List<Hole> holes = new ArrayList<>();
 
     public long getID() {

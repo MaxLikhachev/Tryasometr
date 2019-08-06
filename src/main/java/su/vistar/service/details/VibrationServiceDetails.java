@@ -1,17 +1,18 @@
 package su.vistar.service.details;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import su.vistar.entity.Vibration;
+import su.vistar.model.entity.Vibration;
 import su.vistar.repository.VibrationRepository;
 import su.vistar.service.VibrationService;
 
 import java.util.List;
-import java.util.Optional;
 @Service
 public class VibrationServiceDetails implements VibrationService {
-    @Autowired
-    private VibrationRepository vibrationRepository;
+    private final VibrationRepository vibrationRepository;
+
+    public VibrationServiceDetails(VibrationRepository vibrationRepository) {
+        this.vibrationRepository = vibrationRepository;
+    }
 
     @Override
     public Vibration add(Vibration vibration) {
@@ -20,9 +21,7 @@ public class VibrationServiceDetails implements VibrationService {
 
     @Override
     public Vibration getById(long id) {
-        Optional<Vibration> optionalCarVibration = vibrationRepository.findById(id);
-        Vibration vibration = optionalCarVibration.isPresent() ? optionalCarVibration.get() : new Vibration();
-        return vibration;
+        return vibrationRepository.findById(id).orElseGet(Vibration::new);
     }
 
     @Override

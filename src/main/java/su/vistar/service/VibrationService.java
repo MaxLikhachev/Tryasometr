@@ -1,7 +1,7 @@
 package su.vistar.service;
 
 import org.springframework.stereotype.Service;
-import su.vistar.entity.Vibration;
+import su.vistar.model.entity.Vibration;
 
 import java.util.List;
 

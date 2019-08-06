@@ -1,7 +1,7 @@
 package su.vistar.service;
 
 import org.springframework.stereotype.Service;
-import su.vistar.entity.Model;
+import su.vistar.model.entity.Model;
 
 import java.util.List;
 

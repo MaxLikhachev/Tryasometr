@@ -1,42 +1,17 @@
-package su.vistar.entity;
+package su.vistar.model.request;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
-import javax.persistence.*;
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
 
-@Entity
-@Table(name = "users")
-public class UserData implements Serializable {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @JsonIgnore
-    protected long id;
-    @Column
+public class UserDataRequest implements Serializable {
+    private List<CarRequest> cars;
     private String username;
-    @Column
-    //@JsonIgnore
     private String password;
-
-    @Column
     private String name;
-    @Column
     private String surname;
-    @Column
     private String second_name;
-    @Column
     private String email;
-    @Column
     private String phone;
-
-    @OneToMany
-    public List<Car> cars = new ArrayList<>();
-
-    public long getID() {
-        return this.id;
-    }
 
     public String getUsername() {
         return this.username;
@@ -94,11 +69,11 @@ public class UserData implements Serializable {
         this.phone = phone;
     }
 
-    public List<Car> getCars() {
+    public List<CarRequest> getCars() {
         return this.cars;
     }
 
-    public void setCars(List<Car> cars) {
+    public void setCars(List<CarRequest> cars) {
         this.cars = cars;
     }
 }
