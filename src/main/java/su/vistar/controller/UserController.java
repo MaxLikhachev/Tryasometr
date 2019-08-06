@@ -11,22 +11,22 @@ import su.vistar.service.JwtUserDetailsService;
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
-@RequestMapping(path="/user")
+@RequestMapping(path = "/user")
 public class UserController {
-	@Autowired
-	protected JwtTokenUtil jwtTokenUtil;
-	@Autowired
-	protected JwtUserDetailsService userService;
+    @Autowired
+    protected JwtTokenUtil jwtTokenUtil;
+    @Autowired
+    protected JwtUserDetailsService userService;
 
-	@GetMapping
-	public @ResponseBody
-	ResponseEntity<?> viewUser (HttpServletRequest request){
-		return ResponseEntity.ok(userService.findUserByUsername(jwtTokenUtil.getUsernameFromHeader(request)));
-	}
+    @GetMapping
+    public @ResponseBody
+    ResponseEntity<?> viewUser(HttpServletRequest request) {
+        return ResponseEntity.ok(userService.findUserByUsername(jwtTokenUtil.getUsernameFromHeader(request)));
+    }
 
-	@PutMapping
-	public @ResponseBody
-	ResponseEntity<?> editUser (@RequestParam UserData newUser, HttpServletRequest request){
-		return ResponseEntity.ok(userService.update(newUser));
-	}
+    @PutMapping
+    public @ResponseBody
+    ResponseEntity<?> editUser(@RequestParam UserData newUser, HttpServletRequest request) {
+        return ResponseEntity.ok(userService.update(newUser));
+    }
 }

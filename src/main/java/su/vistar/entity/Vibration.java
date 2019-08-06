@@ -3,7 +3,7 @@ package su.vistar.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name="vibration")
+@Table(name = "vibration")
 public class Vibration {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,17 +17,39 @@ public class Vibration {
     @Column
     private float longitude;
 
-    public long getID(){return this.id;}
+    public long getID() {
+        return this.id;
+    }
 
-    public float getFactor(){return this.factor;}
-    public void setFactor(float factor){this.factor = factor;}
+    public float getFactor() {
+        return this.factor;
+    }
 
-    public float getLatitude(){return this.latitude;}
-    public void setLatitude(float latitude){this.latitude = latitude;}
+    public void setFactor(float factor) {
+        this.factor = factor;
+    }
 
-    public float getLongitude(){return this.longitude;}
-    public void setLongitude(float longitude){this.longitude = longitude;}
+    public float getLatitude() {
+        return this.latitude;
+    }
 
-    public Section getSection(){return this.section;}
-    public void setSection(Section section){this.section = section;}
+    public void setLatitude(float latitude) {
+        this.latitude = latitude;
+    }
+
+    public float getLongitude() {
+        return this.longitude;
+    }
+
+    public void setLongitude(float longitude) {
+        this.longitude = longitude;
+    }
+
+    public Section getSection() {
+        return this.section;
+    }
+
+    public void setSection(Section section) {
+        this.section = section;
+    }
 }

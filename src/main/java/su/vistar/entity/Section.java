@@ -2,10 +2,11 @@ package su.vistar.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name="sections")
+@Table(name = "sections")
 public class Section implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -14,13 +15,25 @@ public class Section implements Serializable {
     @Column
     private float factor;
     @OneToMany
-    private List<Hole> holes;
+    private List<Hole> holes = new ArrayList<>();
 
-    public long getID(){return this.id;}
+    public long getID() {
+        return this.id;
+    }
 
-    public float getFactor(){return this.factor;}
-    public void setFactor(float factor){this.factor = factor;}
+    public float getFactor() {
+        return this.factor;
+    }
 
-    public List<Hole> getHoles(){return this.holes;}
-    public void setHoles(List<Hole> holes){this.holes = holes;}
+    public void setFactor(float factor) {
+        this.factor = factor;
+    }
+
+    public List<Hole> getHoles() {
+        return this.holes;
+    }
+
+    public void setHoles(List<Hole> holes) {
+        this.holes = holes;
+    }
 }

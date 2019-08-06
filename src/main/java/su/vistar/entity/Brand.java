@@ -1,13 +1,12 @@
 package su.vistar.entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name="brands")
+@Table(name = "brands")
 public class Brand implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,14 +15,26 @@ public class Brand implements Serializable {
     @Column(name = "brand_name")
     private String name;
     @OneToMany
-    private List<Model> models;
+    private List<Model> models = new ArrayList<>();
 
 
-    public long getID(){return this.id;}
+    public long getID() {
+        return this.id;
+    }
 
-    public String getName(){return this.name;}
-    public void setName(String name){this.name = name;}
+    public String getName() {
+        return this.name;
+    }
 
-    public List<Model> getModels(){return this.models;}
-    public void setModels(List<Model> models){this.models = models;}
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public List<Model> getModels() {
+        return this.models;
+    }
+
+    public void setModels(List<Model> models) {
+        this.models = models;
+    }
 }

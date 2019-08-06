@@ -1,7 +1,5 @@
 package su.vistar.service;
 
-import java.util.ArrayList;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -9,68 +7,70 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
 import su.vistar.entity.UserData;
 import su.vistar.repository.UserRepository;
 
+import java.util.ArrayList;
+
 @Service
-public class JwtUserDetailsService implements UserDetailsService{
-	
-	@Autowired
-	private UserRepository userRepository;
+public class JwtUserDetailsService implements UserDetailsService {
 
-	@Autowired
-	private PasswordEncoder bcryptEncoder;
+    @Autowired
+    private UserRepository userRepository;
 
-	@Override
-	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		UserData user = userRepository.findByUsername(username);
-		if (user == null) {
-			throw new UsernameNotFoundException("User not found with username: " + username);
-		}
-		return new User(user.getUsername(), user.getPassword(), new ArrayList<>());
-	}
+    @Autowired
+    private PasswordEncoder bcryptEncoder;
 
-	public UserDetails signUpUser(UserData newUser) throws UsernameNotFoundException {
-		UserData user = userRepository.findByUsername(newUser.getUsername());
-		if (user != null) {
-			throw new UsernameNotFoundException("User found with username: " + newUser.getUsername());
-		}
-		return new User(newUser.getUsername(), newUser.getPassword(), new ArrayList<>());
-	}
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        UserData user = userRepository.findByUsername(username);
+        if (user == null) {
+            throw new UsernameNotFoundException("User not found with username: " + username);
+        }
+        return new User(user.getUsername(), user.getPassword(), new ArrayList<>());
+    }
 
-	public UserData findUserByUsername(String username)throws UsernameNotFoundException {
-		UserData user = userRepository.findByUsername(username);
-		if (user == null) throw new UsernameNotFoundException("User not found with username: " + username);
+    //TODO Denied access to sign up more than once
+    public UserDetails signUpUser(UserData newUser) throws UsernameNotFoundException {
+        UserData user = userRepository.findByUsername(newUser.getUsername());
+        if (user != null) {
+            throw new UsernameNotFoundException("User found with username: " + newUser.getUsername());
+        }
+        return new User(newUser.getUsername(), newUser.getPassword(), new ArrayList<>());
+    }
 
-		return user;
-	}
+    public UserData findUserByUsername(String username) throws UsernameNotFoundException {
+        UserData user = userRepository.findByUsername(username);
+        if (user == null) throw new UsernameNotFoundException("User not found with username: " + username);
 
-	//TODO Refactor duplicate code
-	public UserData save(UserData user) {
-		UserData newUser = new UserData();
+        return user;
+    }
 
-		newUser.setUsername(user.getUsername());
-		newUser.setPassword(bcryptEncoder.encode(user.getPassword()));
-		newUser.setSecondName(user.getSecondName());
-		newUser.setName(user.getName());
-		newUser.setSurname(user.getSurname());
-		newUser.setEmail(user.getEmail());
-		newUser.setPhone(user.getPhone());
+    //TODO Refactor duplicate code
+    public UserData save(UserData user) {
+        UserData newUser = new UserData();
 
-		return userRepository.save(newUser);
-	}
+        newUser.setUsername(user.getUsername());
+        newUser.setPassword(bcryptEncoder.encode(user.getPassword()));
+        newUser.setSecondName(user.getSecondName());
+        newUser.setName(user.getName());
+        newUser.setSurname(user.getSurname());
+        newUser.setEmail(user.getEmail());
+        newUser.setPhone(user.getPhone());
 
-	public UserData update(UserData user) {
-		UserData newUser = findUserByUsername(user.getUsername());
+        return userRepository.save(newUser);
+    }
 
-		newUser.setPassword(bcryptEncoder.encode(user.getPassword()));
-		newUser.setSecondName(user.getSecondName());
-		newUser.setName(user.getName());
-		newUser.setSurname(user.getSurname());
-		newUser.setEmail(user.getEmail());
-		newUser.setPhone(user.getPhone());
+    public UserData update(UserData user) {
+        UserData newUser = findUserByUsername(user.getUsername());
 
-		return userRepository.save(newUser);
-	}
+        newUser.setPassword(bcryptEncoder.encode(user.getPassword()));
+        newUser.setSecondName(user.getSecondName());
+        newUser.setName(user.getName());
+        newUser.setSurname(user.getSurname());
+        newUser.setEmail(user.getEmail());
+        newUser.setPhone(user.getPhone());
+
+        return userRepository.save(newUser);
+    }
 }

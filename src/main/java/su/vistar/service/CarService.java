@@ -1,43 +1,22 @@
 package su.vistar.service;
 
-import su.vistar.entity.Car;
-import su.vistar.repository.CarRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import su.vistar.entity.Car;
 
 import java.util.List;
-import java.util.Optional;
 
 
 @Service
-public class CarService {
+public interface CarService {
+    Car add(Car car);
 
-    @Autowired
-    private CarRepository carRepository;
+    Car getById(long id);
 
-    //@Override
-    public Car add(Car car) {
-        return carRepository.save(car);
-    }
+    List<Car> getAll();
 
-    //@Override
-    public Car getById(long id) {
-        Optional<Car> optionalCarMark = carRepository.findById(id);
-        Car car = optionalCarMark.isPresent() ? optionalCarMark.get() : new Car();
-        return car;
-    }
-    //@Override
-    public List<Car> getAll(){return carRepository.findAll();}
-    //@Override
-    public Car edit(Car car){return carRepository.saveAndFlush(car);}
+    Car edit(Car car);
 
-    //@Override
-    public void delete(Car car){carRepository.delete(car);}
+    void delete(Car car);
 
-    //@Override
-    public void remove() {
-        carRepository.deleteAll();
-    }
-
-
+    void remove();
 }

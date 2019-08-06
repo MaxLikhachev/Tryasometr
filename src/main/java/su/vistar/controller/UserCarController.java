@@ -15,8 +15,11 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
 @Controller
-@RequestMapping(path="/user/cars")
+@RequestMapping(path = "/user/cars")
 public class UserCarController extends UserController {
     @Autowired
     protected CarService carService;
@@ -25,7 +28,7 @@ public class UserCarController extends UserController {
 
     @PostMapping
     public @ResponseBody
-    ResponseEntity<?> addUserCar(@RequestParam(name = "model_id") long id, @RequestParam(name = "year") int year, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+    ResponseEntity<?> addUserCar(@RequestParam(name = "model_id") long id, @RequestParam(name = "year") int year, HttpServletRequest request, HttpServletResponse response) throws IOException {
         UserData user = userService.findUserByUsername(jwtTokenUtil.getUsernameFromHeader(request));
         Model model = modelService.getById(id);
 
@@ -37,7 +40,9 @@ public class UserCarController extends UserController {
         car.setYear(year);
         carService.add(car);
 
+        user.setCars(new ArrayList<>());
         user.getCars().add(car);
+        userService.save(user);
 
         return ResponseEntity.ok(car);
     }
@@ -46,16 +51,16 @@ public class UserCarController extends UserController {
     public @ResponseBody
     ResponseEntity<?> deleteUserCar(@PathVariable(name = "id") long id, HttpServletRequest request, HttpServletResponse response) throws IOException {
         UserData user = userService.findUserByUsername(jwtTokenUtil.getUsernameFromHeader(request));
-
-        if (user.getCars().size() == 0)
-            response.sendError(HttpServletResponse.SC_NO_CONTENT);
-
-        for (Car car : user.getCars())
-            if (car.getID() == id)
-                if (user.getCars().size() == 1)
-                    response.sendError(HttpServletResponse.SC_NOT_MODIFIED, "This car couldn't be deleted. It is a single car for this user ");
-                else
-                    carService.delete(carService.getById(car.getID()));
+        try {
+            for (Car car : user.getCars())
+                if (car.getID() == id)
+                    if (user.getCars().size() == 1)
+                        response.sendError(HttpServletResponse.SC_NOT_MODIFIED, "This car couldn't be deleted. It is a single car for this user ");
+                    else
+                        carService.delete(carService.getById(car.getID()));
+        } catch (NullPointerException e){
+            response.sendError(HttpServletResponse.SC_NO_CONTENT, "This car couldn't be deleted. It is a single car for this user ");
+        }
         return ResponseEntity.ok("Successfully deleted");
     }
 }
