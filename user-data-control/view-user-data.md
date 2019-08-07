@@ -31,13 +31,11 @@ JWT
 ```javascript
 {
     "username": "user",
-    "password": "$2a$10$gKWLYljp69tjVTjC/sespevjfeYn8S/ojuCDKIIDP4nM1H3eJdona",
-    "name": null,
-    "surname": null,
-    "email": null,
-    "phone": null,
-    "cars": [],
-    "secondName": null
+    "name": "Name",
+    "surname": "Surname",
+    "email": "email@.www.com",
+    "phone": "88001234567",
+    "secondName": "Second Name"
 }
 ```
 {% endapi-method-response-example %}
