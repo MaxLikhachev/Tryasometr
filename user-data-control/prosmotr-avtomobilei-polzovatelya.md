@@ -25,13 +25,22 @@ JWT
 {% endapi-method-response-example-description %}
 
 ```javascript
-{
-    "brand": "Brand",
-    "model": "Model",
-    "year": 2000,
-    "max": 0,
-    "min": 0,
-}
+[    
+    {
+        "brand": "Brand_1",
+        "model": "Model_1",
+        "year": 2000,
+        "max": 0,
+        "min": 0,
+    },
+    {
+        "brand": "Brand_2",
+        "model": "Model_2",
+        "year": 2010,
+        "max": 0,
+        "min": 0,
+    }
+]    
 ```
 {% endapi-method-response-example %}
 
