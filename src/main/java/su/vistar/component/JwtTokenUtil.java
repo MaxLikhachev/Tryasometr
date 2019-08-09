@@ -20,7 +20,9 @@ public class JwtTokenUtil implements Serializable {
     //TODO Set all methods protected/private
     private static final long serialVersionUID = -2550185165626007488L;
 
-    private static final long JWT_TOKEN_VALIDITY = 24 * 60 * 60;
+    @Value("${jwt.validity}")
+    private static long JWT_VALIDITY;
+    private static final long JWT_TOKEN_VALIDITY = JWT_VALIDITY;
 
     @Value("${jwt.secret}")
     private String secret;
@@ -32,7 +34,7 @@ public class JwtTokenUtil implements Serializable {
     }
 
     public String getUsernameFromHeader(HttpServletRequest request) {
-        return getClaimFromToken(request.getHeader("Authorization").substring(4), Claims::getSubject);
+        return getUsernameFromToken(request.getHeader("Authorization").substring(4));
     }
 
     //retrieve expiration date from jwt token

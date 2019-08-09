@@ -1,5 +1,6 @@
 package su.vistar.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -11,15 +12,21 @@ import su.vistar.repository.UserRepository;
 
 import java.util.ArrayList;
 
+
 @Service
 public class JwtUserDetailsService implements UserDetailsService {
 
-    private final UserRepository userRepository;
+    private UserRepository userRepository;
 
-    private final PasswordEncoder bcryptEncoder;
+    private PasswordEncoder bcryptEncoder;
 
-    public JwtUserDetailsService(UserRepository userRepository, PasswordEncoder bcryptEncoder) {
+    @Autowired
+    private void setUserRepository(UserRepository userRepository) {
         this.userRepository = userRepository;
+    }
+
+    @Autowired
+    private void setPasswordEncoder(PasswordEncoder bcryptEncoder) {
         this.bcryptEncoder = bcryptEncoder;
     }
 

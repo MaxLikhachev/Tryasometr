@@ -3,6 +3,14 @@
     {
       "name": "jwt.secret",
       "type": "java.lang.String"
+    },
+    {
+      "name": "jwt.validity",
+      "type": "long"
+    },
+    {
+      "name": "jwt.begin.string",
+      "type": "java.lang.String"
     }
   ]
 }

@@ -13,10 +13,6 @@ public class Model implements Serializable {
     @Column
     private String name;
     @Column
-    private float min;
-    @Column
-    private float max;
-    @Column
     private int yearFrom;
     @Column
     private int yearTo;
@@ -31,22 +27,6 @@ public class Model implements Serializable {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public float getMin() {
-        return this.min;
-    }
-
-    public void setMin(float min) {
-        this.min = min;
-    }
-
-    public float getMax() {
-        return this.min;
-    }
-
-    public void setMax(float max) {
-        this.max = max;
     }
 
     public void setYears(int yearFrom, int yearTo) {
