@@ -27,3 +27,21 @@ JWT eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNTY0NDE2NDM3LCJpYXQiOjE1NjQ
 }
 ```
 
+## Набор реализованных и необходимых функций
+
+{% tabs %}
+{% tab title="User" %}
+| create | update | view |
+| :--- | :--- | :--- |
+|  |  |  |
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
+
+|  |  |
+| :--- | :--- |
+|  |  |
+

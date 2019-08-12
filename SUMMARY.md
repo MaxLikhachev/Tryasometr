@@ -10,7 +10,8 @@
 ## Просмотр и управление данными о пользователей <a id="user-data-control"></a>
 
 * [Просмотр данных пользователя](user-data-control/view-user-data.md)
-* [Добавление нового автомобиля](user-data-control/add-new-user-car.md)
+* [Добавление нового автомобиля пользователя](user-data-control/add-new-user-car.md)
+* [Просмотр автомобилей пользователя](user-data-control/prosmotr-avtomobilei-polzovatelya.md)
 
 ## Просмотр данных о производителях и моделях автомобилях <a id="cars-brands-and-models-data"></a>
 
