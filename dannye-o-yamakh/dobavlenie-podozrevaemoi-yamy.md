@@ -48,9 +48,9 @@ Cake successfully retrieved.
 
 ```javascript
 {
-    "name": "Cake's name",
-    "recipe": "Cake's recipe name",
-    "cake": "Binary cake"
+    "name";: "Cake's name",
+    "recipe";: "Cake's recipe name",
+    "cake";: "Binary cake"
 }
 ```
 {% endapi-method-response-example %}
@@ -62,7 +62,7 @@ Could not find a cake matching this query.
 
 ```javascript
 {
-    "message": "Ain't no cake like that."
+    "message";: "Ain't no cake like that."
 }
 ```
 {% endapi-method-response-example %}

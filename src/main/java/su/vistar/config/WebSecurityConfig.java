@@ -14,8 +14,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import su.vistar.component.JwtAuthenticationEntryPoint;
-import su.vistar.component.JwtRequestFilter;
+import su.vistar.authentication.component.JwtAuthenticationEntryPoint;
+import su.vistar.authentication.component.JwtRequestFilter;
 
 @Configuration
 @EnableWebSecurity
@@ -39,6 +39,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         // configure AuthenticationManager so that it knows from where to load
         // user for matching credentials
         // Use BCryptPasswordEncoder
+        //auth.userDetailsService(jwtUserDetailsService).
         auth.userDetailsService(jwtUserDetailsService).passwordEncoder(passwordEncoder());
     }
 
@@ -58,12 +59,16 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         // We don't need CSRF for this example
         httpSecurity.csrf().disable()
                 // dont authenticate this particular request
-                .authorizeRequests().antMatchers("/login", "/signup", "/v2/api-docs").permitAll().
+                .authorizeRequests().antMatchers("/login", "/signup", "/sections" ).permitAll()
+                //.antMatchers("/user").hasRole("USER")
+                //.antMatchers("/v2/api-docs").hasRole("GUEST")
                 // all other requests need to be authenticated
-                        anyRequest().authenticated().and().
+                        .anyRequest().authenticated().and().
                 // make sure we use stateless session; session won't be used to
                 // store user's state.
-                        exceptionHandling().authenticationEntryPoint(jwtAuthenticationEntryPoint).and().sessionManagement()
+        //exceptionHandling().authenticationEntryPoint(jwtAuthenticationEntryPoint).and().sessionManagement()
+        exceptionHandling().authenticationEntryPoint(jwtAuthenticationEntryPoint).and().sessionManagement()
+
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 
         // Add a filter to validate the tokens with every request

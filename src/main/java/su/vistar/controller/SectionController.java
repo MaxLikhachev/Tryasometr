@@ -1,42 +1,84 @@
 package su.vistar.controller;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
+import su.vistar.model.entity.BufferedHole;
+import su.vistar.model.entity.BufferedSection;
 import su.vistar.model.entity.Hole;
+import su.vistar.model.entity.Section;
+import su.vistar.model.request.HoleRequest;
+import su.vistar.model.request.SectionRequest;
+import su.vistar.model.response.HoleResponse;
+import su.vistar.model.response.SectionResponse;
+import su.vistar.service.BufferedHoleService;
+import su.vistar.service.BufferedSectionService;
+import su.vistar.service.HoleService;
 import su.vistar.service.SectionService;
 
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
-@Controller
+@RestController
 @RequestMapping(path = "/sections")
 public class SectionController {
-    protected final Log logger = LogFactory.getLog(this.getClass());
     private final SectionService sectionService;
+    private final BufferedSectionService bufferedSectionService;
+    private final HoleService holeService;
+    private final BufferedHoleService bufferedHoleService;
 
-    public SectionController(SectionService sectionService) {
+    public SectionController(SectionService sectionService, BufferedSectionService bufferedSectionService, HoleService holeService, BufferedHoleService bufferedHoleService) {
+        this.holeService = holeService;
+        this.bufferedHoleService = bufferedHoleService;
         this.sectionService = sectionService;
+        this.bufferedSectionService = bufferedSectionService;
     }
 
-    @GetMapping()
+    @GetMapping(path = "/{id}")
     public @ResponseBody
-    ResponseEntity<?> getAll() {
-        return ResponseEntity.ok(sectionService.getAll());
+    ResponseEntity getById(@PathVariable(name = "id") long id) {
+        Section section = sectionService.getById(id);
+        return ResponseEntity.ok(new SectionResponse(id, section.getFactor()));
     }
 
-    @GetMapping(path = "/{section_id}/holes")
+    @PutMapping(path = "/{id}")
     public @ResponseBody
-    ResponseEntity<?> getAllModels(@PathVariable(name = "section_id") long sectionID, HttpServletResponse response) throws IOException {
-        List<Hole> holes = sectionService.getById(sectionID).getHoles();
-        if (holes == null)
-            response.sendError(HttpServletResponse.SC_NO_CONTENT);
-        return ResponseEntity.ok(holes);
+    ResponseEntity put(@PathVariable(name = "id") long id, @RequestBody SectionRequest section) {
+        return ResponseEntity.ok(bufferedSectionService.save(new BufferedSection(System.currentTimeMillis(), id, section.getFactor())));
+    }
+
+    @GetMapping(path="/some")
+    public @ResponseBody
+    ResponseEntity getAllById(@RequestBody Iterable<Long> ids) {
+        try {
+            List<Section> sections = sectionService.getAllById(ids);
+            List<SectionResponse> response = new ArrayList<>();
+            for (Section section : sections)
+                response.add(new SectionResponse(section.getId(), section.getFactor()));
+            return ResponseEntity.ok(sections);
+        } catch (NullPointerException e) {
+            return ResponseEntity.status(HttpServletResponse.SC_NO_CONTENT).body(null);
+        }
+    }
+
+    @GetMapping(path = "/{id}/holes")
+    public @ResponseBody
+    ResponseEntity getAllHolesById(@PathVariable(name = "id") long id) {
+        try {
+            List<HoleResponse> holes = new ArrayList<>();
+            for (Hole hole : sectionService.getById(id).getHoles())
+                holes.add(new HoleResponse(hole.getBegin(), hole.getEnd()));
+            return ResponseEntity.ok(holes);
+        } catch (NullPointerException e) {
+            return ResponseEntity.status(HttpServletResponse.SC_NO_CONTENT).body(null);
+        }
+    }
+
+    @PutMapping(path = "/{id}/holes")
+    public @ResponseBody
+    ResponseEntity putAllHolesById(@PathVariable(name = "id") long id, @RequestBody List<HoleRequest> holes) {
+        for (HoleRequest hole : holes)
+            bufferedHoleService.save(new BufferedHole(System.currentTimeMillis(), id, hole.getDistance()));
+        return ResponseEntity.ok(null);
     }
 }

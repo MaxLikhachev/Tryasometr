@@ -1,23 +1,20 @@
 package su.vistar.model.response;
 
-import su.vistar.model.entity.UserData;
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.Setter;
 
 import java.io.Serializable;
 
+@Data
+@AllArgsConstructor
+@Setter(AccessLevel.NONE)
 public class UserDataResponse implements Serializable {
-    private String username;
-    private String name;
-    private String surname;
-    private String secondName;
-    private String email;
-    private String phone;
-
-    public UserDataResponse(UserData userData) {
-        this.username = userData.getUsername();
-        this.name = userData.getName();
-        this.surname = userData.getSurname();
-        this.secondName = userData.getSecondName();
-        this.email = userData.getEmail();
-        this.phone = userData.getPhone();
-    }
+    private final String username;
+    private final String name;
+    private final String surname;
+    private final String secondName;
+    private final String email;
+    private final String phone;
 }

@@ -2,20 +2,39 @@ package su.vistar.service;
 
 import org.springframework.stereotype.Service;
 import su.vistar.model.entity.UserData;
+import su.vistar.repository.UserRepository;
 
 import java.util.List;
 
 @Service
-public interface UserDataService {
-    UserData add(UserData userData);
+public class UserDataService {
+    private final UserRepository userRepository;
 
-    UserData getById(long id);
+    public UserDataService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
 
-    List<UserData> getAll();
+    
+    public void save(UserData userData) {
+        userRepository.save(userData);
+    }
 
-    UserData edit(UserData userData);
+    public UserData getById(long id) {
+        return userRepository.findById(id).orElseGet(UserData::new);
+    }
 
-    void delete(UserData userData);
 
-    UserData findByUsername(String username);
+    public List<UserData> getAll() {
+        return userRepository.findAll();
+    }
+
+
+    public void delete(UserData userData) {
+        userRepository.delete(userData);
+    }
+
+
+    public UserData findByUsername(String username) {
+        return userRepository.findByUsername(username);
+    }
 }

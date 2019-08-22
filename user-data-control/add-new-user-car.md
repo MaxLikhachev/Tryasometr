@@ -42,11 +42,11 @@ ID модели
 
 ```javascript
 {
-    "brand": "Audi",
-    "model": "80",
-    "year": 2019,
-    "min": 0.0,
-    "max": 0.0
+    "brand";: "Audi",
+    "model";: "80",
+    "year";: 2019,
+    "min";: 0.0,
+    "max";: 0.0
 }
 ```
 {% endapi-method-response-example %}
@@ -68,7 +68,7 @@ ID модели
 
 ```javascript
 {
-    "message": "Required int parameter 'year' is not present",
+    "message";: "Required int parameter 'year' is not present",
 }
 ```
 {% endapi-method-response-example %}

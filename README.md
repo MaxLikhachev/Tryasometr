@@ -13,7 +13,7 @@ description: >-
 В `POST` запросах JWT должен передаваться в качестве `header`-параметра `"Authorization"` и начинаться с подстроки `"JWT "`Пример:
 
 ```javascript
-JWT eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNTY0NDE2NDM3LCJpYXQiOjE1NjQzOTg0Mzd9.qW30s-tJku4uJ_gUPWReqhtDWWehLk4e4HL3P2gk7xjxYrpXWsF1no21kkfCbcdSzP4s9UJ-9T5Rsvqf8chteg
+JWT; eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNTY0NDE2NDM3LCJpYXQiOjE1NjQzOTg0Mzd9.qW30s-tJku4uJ_gUPWReqhtDWWehLk4e4HL3P2gk7xjxYrpXWsF1no21kkfCbcdSzP4s9UJ-9;T5Rsvqf8chteg
 ```
 
 ## Регистрация и аутентификация пользователей
@@ -22,8 +22,8 @@ JWT eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNTY0NDE2NDM3LCJpYXQiOjE1NjQ
 
 ```javascript
 {
-    "username":"user", 
-    "password":"password"
+    "username";:"user", 
+    "password";:"password"
 }
 ```
 

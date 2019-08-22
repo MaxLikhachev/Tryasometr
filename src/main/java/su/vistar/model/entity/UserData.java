@@ -1,104 +1,48 @@
 package su.vistar.model.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.*;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
-import java.util.List;
 
 @Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "users")
 public class UserData implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @JsonIgnore
-    protected long id;
-    @Column
+    @Setter(AccessLevel.PROTECTED)
+    @NotNull
     private String username;
-    //TODO solve without eager fetch
-    @JsonIgnore
-    @OneToMany(fetch = FetchType.EAGER)
-    private List<Car> cars;
-
     @Column
     private String name;
     @Column
     private String surname;
     @Column
+    @NotNull
     @JsonIgnore
     private String password;
     @Column
     private String email;
     @Column
+    //@NotNull
     private String phone;
     @Column
     private String secondName;
+    @Column
+    @NotNull
+    @Setter(AccessLevel.NONE)
+    private String authorities;
 
-    public long getID() {
-        return this.id;
-    }
-
-    public String getUsername() {
-        return this.username;
-    }
-
-    public void setUsername(String username) {
+    public UserData(String username, String password, String authorities) {
         this.username = username;
-    }
-
-    public String getPassword() {
-        return this.password;
-    }
-
-    public void setPassword(String password) {
         this.password = password;
-    }
-
-    public String getName() {
-        return this.name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getSurname() {
-        return this.surname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
-    public String getSecondName() {
-        return this.secondName;
-    }
-
-    public void setSecondName(String secondName) {
-        this.secondName = secondName;
-    }
-
-    public String getEmail() {
-        return this.email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPhone() {
-        return this.phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public List<Car> getCars() {
-        return this.cars;
-    }
-
-    public void setCars(List<Car> cars) {
-        this.cars = cars;
+        this.authorities = authorities;
     }
 }

@@ -1,29 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="Apache Derby (Embedded) - jdbc:derby:;create=true" uuid="d02f57ff-2fc5-48b9-8ef4-f8b15915cef8">
-      <driver-ref>derby.embedded</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>
-      <jdbc-url>jdbc:derby:;create=true</jdbc-url>
-    </data-source>
-    <data-source source="LOCAL" name="new_file" uuid="45b29690-cd7d-4427-a203-fbdb0ab01d92">
-      <driver-ref>derby.embedded</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>
-      <jdbc-url>jdbc:derby:$PROJECT_DIR$/src/main/resources/new_file</jdbc-url>
-    </data-source>
-    <data-source source="LOCAL" name="jdbc:hsqldb:file:/Users/maxlikhachev/IdeaProjects/tryasometr-new/src/main/resources/new_file/" uuid="7a6e75b2-458a-43dd-8b2c-5959d5199b31">
-      <driver-ref>hsqldb.local</driver-ref>
-      <synchronize>true</synchronize>
-      <configured-by-url>true</configured-by-url>
-      <jdbc-driver>org.hsqldb.jdbc.JDBCDriver</jdbc-driver>
-      <jdbc-url>jdbc:hsqldb:file:$PROJECT_DIR$/src/main/resources/new_file/</jdbc-url>
-    </data-source>
     <data-source source="LOCAL" name="MySQL - tryasometr@localhost" uuid="0e9e4e6e-81b1-4e17-ad96-78805252a98d">
-      <driver-ref>mysql.8</driver-ref>
+      <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/tryasometr</jdbc-url>
       <driver-properties>
         <property name="autoReconnect" value="true" />
@@ -33,6 +14,7 @@
         <property name="characterSetResults" value="utf8" />
         <property name="yearIsDateType" value="false" />
       </driver-properties>
+      <time-zone>UTC</time-zone>
     </data-source>
   </component>
 </project>

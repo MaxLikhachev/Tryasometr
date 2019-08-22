@@ -1,26 +1,15 @@
 package su.vistar.model.request;
 
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.Setter;
+
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 
+@Data
+@AllArgsConstructor
+@Setter(AccessLevel.PROTECTED)
 public class SectionRequest implements Serializable {
-    private float factor;
-    private List<HoleRequest> holes = new ArrayList<>();
-
-    public float getFactor() {
-        return this.factor;
-    }
-
-    public void setFactor(float factor) {
-        this.factor = factor;
-    }
-
-    public List<HoleRequest> getHoles() {
-        return this.holes;
-    }
-
-    public void setHoles(List<HoleRequest> holes) {
-        this.holes = holes;
-    }
+    private final float factor;
 }

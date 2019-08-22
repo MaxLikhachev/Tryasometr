@@ -2,19 +2,32 @@ package su.vistar.service;
 
 import org.springframework.stereotype.Service;
 import su.vistar.model.entity.Hole;
+import su.vistar.repository.HoleRepository;
 
 import java.util.List;
 
 
 @Service
-public interface HoleService {
-    Hole add(Hole hole);
+public class HoleService {
+    private final HoleRepository holeRepository;
 
-    Hole getById(long id);
+    public HoleService(HoleRepository holeRepository) {
+        this.holeRepository = holeRepository;
+    }
+    
+    public Hole save(Hole hole) {
+        return holeRepository.save(hole);
+    }
 
-    List<Hole> getAll();
+    public Hole findById(long id) {
+        return holeRepository.findById(id).orElseGet(Hole::new);
+    }
 
-    Hole edit(Hole hole);
+    public List<Hole> findAll() {
+        return holeRepository.findAll();
+    }
 
-    void delete(Hole hole);
+    public void delete(Hole hole) {
+        holeRepository.delete(hole);
+    }
 }

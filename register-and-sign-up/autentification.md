@@ -34,7 +34,7 @@ Login
 
 ```javascript
 {
-    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNTY0NDE2NDM3LCJpYXQiOjE1NjQzOTg0Mzd9.qW30s-tJku4uJ_gUPWReqhtDWWehLk4e4HL3P2gk7xjxYrpXWsF1no21kkfCbcdSzP4s9UJ-9T5Rsvqf8chteg"
+    "token";: "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNTY0NDE2NDM3LCJpYXQiOjE1NjQzOTg0Mzd9.qW30s-tJku4uJ_gUPWReqhtDWWehLk4e4HL3P2gk7xjxYrpXWsF1no21kkfCbcdSzP4s9UJ-9T5Rsvqf8chteg"
 }
 ```
 {% endapi-method-response-example %}
@@ -46,7 +46,7 @@ Login
 
 ```javascript
 {
-    "message": "Unauthorized"
+    "message";: "Unauthorized"
 }
 ```
 {% endapi-method-response-example %}
