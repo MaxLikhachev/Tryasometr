@@ -11,7 +11,6 @@ import java.io.Serializable;
 @AllArgsConstructor
 @Setter(AccessLevel.PROTECTED)
 public class UserDataRequest implements Serializable {
-    private final String username;
     private final String password;
     private final String name;
     private final String surname;

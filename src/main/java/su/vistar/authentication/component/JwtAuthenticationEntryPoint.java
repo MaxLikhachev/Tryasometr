@@ -1,5 +1,6 @@
 package su.vistar.authentication.component;
 
+//import su.vistar.exception.AuthenticationException;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.stereotype.Component;

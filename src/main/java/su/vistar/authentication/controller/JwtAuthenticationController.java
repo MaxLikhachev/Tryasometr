@@ -4,8 +4,6 @@ import org.jetbrains.annotations.NotNull;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.BadCredentialsException;
-import org.springframework.security.authentication.DisabledException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.User;
@@ -33,19 +31,18 @@ public class JwtAuthenticationController {
     private final UserDataService userDataService;
     private final LogService logger;
 
-    public JwtAuthenticationController(AuthenticationManager authenticationManager, JwtTokenUtil jwtTokenUtil, JwtUserDetailsService userDetailsService, UserDataService userDataService, LogService logger) {
+    public JwtAuthenticationController(AuthenticationManager authenticationManager, JwtTokenUtil jwtTokenUtil, JwtUserDetailsService userDetailsService, LogService logger, UserDataService userDataService) {
         this.authenticationManager = authenticationManager;
         this.jwtTokenUtil = jwtTokenUtil;
         this.userDetailsService = userDetailsService;
         this.userDataService = userDataService;
         this.logger = logger;
-        logger.setClass(this.getClass());
     }
 
     @PostMapping(value = "/login")
     public ResponseEntity updateAuthenticationToken(@NotNull @RequestBody JwtRequest authenticationRequest, HttpServletRequest httpServletRequest) throws Exception {
-        authenticate(authenticationRequest.getUsername(), authenticationRequest.getPassword());
-        logger.info("User : "+authenticationRequest.getUsername()+" login");
+        authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(authenticationRequest.getUsername(), authenticationRequest.getPassword()));
+        logger.info("User : "+authenticationRequest.getUsername()+" login", this.getClass().toString());
         return ResponseEntity.ok(new JwtResponse(jwtTokenUtil.generateToken(userDetailsService.loadUserByUsername(authenticationRequest.getUsername()))));
     }
 
@@ -56,20 +53,9 @@ public class JwtAuthenticationController {
         } catch (UsernameNotFoundException e) {
             UserDetails userDetails = new User(authenticationRequest.getUsername(), authenticationRequest.getPassword(), AuthorityUtils.createAuthorityList("ROLE_USER"));
             userDataService.save(new UserData(userDetails.getUsername(), userDetailsService.getPassword(userDetails.getPassword()), userDetails.getAuthorities().toString().replaceAll("\\[","").replaceAll("]","")));
-            logger.info("User : "+userDetails.getUsername()+" signup");
+            logger.info("User : "+userDetails.getUsername()+" signup", this.getClass().toString());
             return ResponseEntity.ok(new JwtResponse(jwtTokenUtil.generateToken(userDetails)));
         }
         return new ResponseEntity(HttpStatus.UNAUTHORIZED);
     }
-
-    private void authenticate(String username, String password) throws Exception {
-        try {
-            authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(username, password));
-        } catch (DisabledException e) {
-            throw new Exception("USER_DISABLED", e);
-        } catch (BadCredentialsException e) {
-            throw new Exception("INVALID_CREDENTIALS", e);
-        }
-    }
-
 }

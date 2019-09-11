@@ -27,14 +27,14 @@ public class UserDataController {
 
     @GetMapping
     public @ResponseBody
-    ResponseEntity getUser(HttpServletRequest request) {
+    ResponseEntity get(HttpServletRequest request) {
         UserData user = userService.findByUsername(jwtTokenUtil.getUsernameFromHeader(request));
         return ResponseEntity.ok(new UserDataResponse(user.getUsername(),user.getName(),user.getSurname(),user.getSecondName(),user.getEmail(),user.getPhone()));
     }
 
     @PutMapping
     public @ResponseBody
-    ResponseEntity editUser(@RequestParam @Valid UserDataRequest userRequest, HttpServletRequest request) {
+    ResponseEntity edit(@RequestBody @Valid UserDataRequest userRequest, HttpServletRequest request) {
         UserData user = userService.findByUsername(jwtTokenUtil.getUsernameFromHeader(request));
         user.setPassword(userRequest.getPassword());
         user.setEmail(userRequest.getEmail());
@@ -48,7 +48,7 @@ public class UserDataController {
 
     @DeleteMapping
     public @ResponseBody
-    ResponseEntity deleteUser(HttpServletRequest request) {
+    ResponseEntity delete(HttpServletRequest request) {
         userService.delete(userService.findByUsername(jwtTokenUtil.getUsernameFromHeader(request)));
         return ResponseEntity.ok("User successfully deleted");
     }
