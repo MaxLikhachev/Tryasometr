@@ -4,27 +4,7 @@
     <option name="CUSTOM_SCOPE_NAME" value="Project Files" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3403883b-995a-4393-89be-698d83257e48" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/authentication/component/JwtAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/authentication/component/JwtAuthenticationEntryPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/authentication/controller/JwtAuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/authentication/controller/JwtAuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/controller/SectionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/controller/SectionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/controller/UserDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/controller/UserDataController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/exception/RestExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/exception/CustomExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/logging/service/LogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/logging/service/LogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/su/vistar/model/request/UserDataRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/su/vistar/model/request/UserDataRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data-mysql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data-mysql.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/schema-mysql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/schema-mysql.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/controller/SectionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/controller/SectionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/controller/UserDataController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/controller/UserDataController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/model/entity/UserData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/model/entity/UserData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/model/request/HoleRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/model/request/HoleRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/model/request/UserDataRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/model/request/UserDataRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/su/vistar/model/response/HoleResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/su/vistar/model/response/HoleResponse.class" afterDir="false" />
-    </list>
+    <list default="true" id="3403883b-995a-4393-89be-698d83257e48" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -429,6 +409,11 @@
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@a66a3902" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceNode@22e82ada" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@a66a3902" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@6a205882" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
           </expand>
           <select />
         </treeState>
@@ -481,7 +466,7 @@
       <workItem from="1566549293917" duration="389000" />
       <workItem from="1566556749745" duration="8000" />
       <workItem from="1566575884050" duration="233000" />
-      <workItem from="1568167125751" duration="1027000" />
+      <workItem from="1568167125751" duration="1199000" />
     </task>
     <task id="LOCAL-00001" summary="Test IntelliJ IDEA">
       <created>1564400927000</created>
@@ -546,7 +531,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566467254859</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added exception handler">
+      <created>1568168271893</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1568168271893</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
